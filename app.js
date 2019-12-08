@@ -1,1 +1,2 @@
-console.log("Our Express app will go here");
+var express = require("express");
+var app = express();
