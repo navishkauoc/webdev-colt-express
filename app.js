@@ -13,12 +13,12 @@ app.get("/dog", function(req,res){
     res.send("MEOW!");
 });
 
-app.get("*", function(req,res){
-    res.send("You are a star!");
-});
-
 app.get("/r/:subredditName", function(req,res){
     res.send("Welcome to a Subreddit!");
+});
+
+app.get("*", function(req,res){
+    res.send("You are a star!");
 });
 
 app.listen(3000, function(){
